@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=850" user-scalable="no">
+<title>{{meta_title}}</title>
+ <meta name="description" content="{{meta_description}}" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6684232/652482/css/fonts.css" />
+
+{{ghost_head}}
+</head>
+<body>
+
+<header>
+	<div class="title">
+	<a href="{{@blog.url}}"><h1 id="blog-title">These are places</h1></a>
+	<p id="blog-subhead">(Some call it a blog)</p>
+	</div>
+</header>
+	<div class="circle"><a href='http://andrewsimone.com/' class="fill-div"></a></div>
+	</div>
+	<div class="content">		
+			<p class="bio">This is where I convince you I'm not an asshole. I'll probably also link to twitter because people are supposed to do that somewhere.</p>
+	<div class="stupid-line"><a name="skipheader"></a></div>
+	
+		{{#foreach posts}}
+			<div class="post">
+				<a href="{{url}}"><h3 class="archive-title">{{{title}}}</h3></a>
+				<div class="post-archive">
+					<p>{{excerpt}}&hellip;</p>
+					<p><a href="{{url}}">Read More</a></p>
+				</div>
+					<div class="stupidest-line"></div>
+			</div>
+		{{/foreach}}
+		</div>
+	
+	</div>
+<footer>
+	<div class="footer-bullshit">
+		<p><a href="mailto:andrewsimone@gmail.com">andrewsimone@gmail.com</a></p>
+	</div>
+
+		{{pagination}}
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=850" user-scalable="no">
+<title>{{meta_title}}</title>
+ <meta name="description" content="{{meta_description}}" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6684232/652482/css/fonts.css" />
+
+{{ghost_head}}
+</head>
+<body>
+
+<header>
+	<div class="title">
+	<a href="{{@blog.url}}"><h1 id="blog-title">This is a place</h1></a>
+	<p id="blog-subhead">(Some call it a blog)</p>
+	</div>
+</header>
+	<div class="circle"><a href='http://andrewsimone.com' class="fill-div"></a></div>
+	</div>
+	<div class="content">
+		
+			<p class="bio">This is where I convince you I'm not an asshole. I'll probably also link to twitter because people are supposed to do that somewhere.</p>
+	<div class="stupid-line"><a name="skipheader"></a></div>
+		<div class="post">
+			<a href="{{url}}#skipheader"><h2>{{{title}}}</h2></a>
+			{{content}}
+				<div class="stupider-line"></div>
+				<div class="date"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time></div>
+		</div>
+	
+	</div>
+<footer>
+	<div class="footer-bullshit">
+		<p><a href="mailto:andrewsimone@gmail.com">andrewsimone@gmail.com</a></p>
+</footer>
+</body>
+</html>
