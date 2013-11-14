@@ -25,13 +25,15 @@
 		
 			<p class="bio">This is where I convince you I'm not an asshole. I'll probably also link to twitter because people are supposed to do that somewhere.</p>
 	<div class="stupid-line"><a name="skipheader"></a></div>
+	
+		{{#post}}
 		<div class="post">
 			<a href="{{url}}#skipheader"><h2>{{{title}}}</h2></a>
 			{{content}}
 				<div class="stupider-line"></div>
 				<div class="date"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time></div>
 		</div>
-	
+		{{/post}}
 	</div>
 <footer>
 	<div class="footer-bullshit">
